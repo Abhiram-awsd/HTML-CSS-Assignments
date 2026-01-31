@@ -1,0 +1,19 @@
+body{
+    padding: 100px;
+}
+.flex{
+    display: flex;
+}
+.right{
+    background-color: red;
+    width: 200px;
+    padding: 20px 100px;
+    color:aliceblue;
+}
+
+.left{
+    background-color: rgb(43, 0, 255);
+    width: 200px;
+    padding: 20px 200px;
+    color:aliceblue;
+}
