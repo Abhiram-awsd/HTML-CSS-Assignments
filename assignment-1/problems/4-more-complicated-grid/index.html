@@ -1,71 +1,82 @@
-
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Grid Layout</title>
+    <title>Document</title>
     <style>
-        .container {
-            width: 1200px;
-            margin: 0 auto;
-            display: grid;
-            grid-template-columns: 1fr 2fr;
-            gap: 10px;
+        *{
+            padding: 0;
+            margin: 0;
+            background-color: #fff;
+            font-family: Arial, Helvetica, sans-serif;
         }
-
-        .left {
-            background-color: red;
+        body{
+            padding: 20px;
+            margin: 100px;
         }
-
-        .right {
+        .grid{
+           display: grid;
+           grid-template-columns: repeat(6,100px);
+           grid-template-rows: repeat(3,100px);
+           color: rgb(0, 0, 0);
+        }
+        .block{
+            border-radius: 4px;
+            margin: 3px;
             background-color: blue;
+            text-align: center;
+            align-content: center;
+            color:aliceblue
         }
-        .vertical-center {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100%;
+        .block-1{
+           background-color: red;
+           grid-column:1/4;
+           grid-row: 1/2;
+           border-radius: 4px;
+           margin: 3px;
+           text-align: center;
+           align-content: center;
+           color:aliceblue
         }
-        .horizontal-center {
-            margin: 0 auto;
+        .block-2{
+           background-color: red;
+           grid-column:1/4;
+           grid-row: 2/5;
+           border-radius: 4px;
+           margin: 3px;
+           text-align: center;
+           align-content: center;
+           color:aliceblue
         }
-        .grid1 {
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
+        .block:hover{
+            box-shadow: 2px 2px 4px 2px rgb(96, 84, 228);
+            transition: 0.3sec ease-in-out;
         }
+        .block-1:hover{
+            box-shadow: 2px 2px 4px 2px rgb(239, 68, 68);
+            transition: 0.3sec ease-in-out;
+        }
+        .block-2:hover{
+            box-shadow: 2px 2px 4px 2px rgb(239, 68, 68);
+            transition: 0.3sec ease-in-out;
+        }
+    
     </style>
 </head>
-
 <body>
-    <div class="container">
-        <div class="left">
-            <div>
-                <div class="horizontal-center">
-                    <h1>Left</h1>
-                </div>
-                <div>
-                    <h3>
-                    text text text text text text text text text text text text text
-                    </h3>
-                </div>
-            </div>
-        </div>
-        <div class="right">
-            <div class="grid1">
-                <h2>Col 1</h2>
-                <h2>Col 2</h2>
-                <h2>Col 3</h2>
-                <h2>Col 1</h2>
-                <h2>Col 2</h2>
-                <h2>Col 3</h2>
-                <h2>Col 1</h2>
-                <h2>Col 2</h2>
-                <h2>Col 3</h2>
-            </div>
-        </div>
-    </div>
-</body>
+    <div class="grid">
+        <span class="block-1">Left</span>
+        <span class="block-2">Left-text</span>
+        <span class="block">col 1</span>
+        <span class="block">col 2</span>
+        <span class="block">col 3</span>
+        <span class="block">col 4</span>
+        <span class="block">col 5</span>
+        <span class="block">col 6</span>
+        <span class="block">col 7</span>
+        <span class="block">col 8</span>
+        <span class="block">col 9</span>
 
+    </div>
 </html>
