@@ -1,38 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Grid Layout</title>
+    <title>Document</title>
     <style>
-        .container {
-            width: 1200px;
-            margin: 0 auto;
-            display: grid;
-            grid-template-columns: 1fr 2fr;
-            gap: 10px;
+        *{
+            padding: 0;
+            margin: 0;
+            background-color: #fff;
+            font-family: Arial, Helvetica, sans-serif;
         }
-
-        .left {
-            background-color: red;
+        body{
+            padding: 20px;
+            margin: 100px;
         }
-
-        .right {
-            background-color: blue;
+        .grid{
+           display: grid;
+           grid-template-columns: repeat(4,100px);
+           color: aliceblue;
+        }
+        .block-1{
+            background-color: #f63636;
+            grid-column: 1/2;
+            padding: 20px;
+            margin: 5px;
+            gap: 5px;
+            border-radius: 3px;
+        }
+        .block-2{
+            background-color: #2e13dc;
+            grid-column: 2/5;
+            padding: 20px;
+            margin: 5px;
+            gap: 5px;
+            border-radius: 3px;
         }
     </style>
 </head>
-
 <body>
-    <div class="container">
-        <div class="left">
-            <h1>Left</h1>
-        </div>
-        <div class="right">
-            <h1>Right</h1>
-        </div>
+    <div class="grid">
+        <span class="block-1">Left</span><span class="block-2">Right</span>
     </div>
-</body>
-
 </html>
