@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            background-color: #030303;
+            font-family: sans-serif;
+        }
+        body{
+            padding: 20px;
+            margin: 100px;
+        }
+        .grid{
+           display: grid;
+           justify-content: center;
+           grid-template-columns: repeat(6,150px);
+           grid-template-rows: repeat(3,100px);
+           color: rgb(0, 0, 0);
+        }
+        .block{
+            border-radius: 5%;
+            margin: 3px;
+            background-color:  rgb(9, 9, 9);
+            color:aliceblue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .block-1{
+           background-color: rgb(9, 9, 9);
+           grid-column:1/4;
+           grid-row: 1/2;
+           border-radius: 5%;
+           margin: 3px;
+           text-align: center;
+           align-content: center;
+           color:aliceblue;
+           font-size: larger;
+           font-weight: 600;
+           font-family: sans-serif;
+        }
+        .block-2{
+           background-color: rgb(9, 9, 9);
+           grid-column:1/4;
+           grid-row: 2/5;
+           border-radius:5%;
+           margin: 3px;
+           text-align: center;
+           align-content: center;
+           color:aliceblue;
+           padding: 40px;
+           color:grey;
+        }
+        .block:hover{
+            box-shadow: 0 0 11px rgb(98, 98, 99);
+            transition: 0.3sec ease-in-out;
+        }
+        .block-1:hover{
+            box-shadow: 0 0 11px rgb(98, 98, 99);
+            transition: 0.3sec ease-in-out;
+        }
+        .block-2:hover{
+            box-shadow: 0 0 11px rgb(98, 98, 99);
+            transition: 0.3sec ease-in-out;
+        }
+
+        
+    
+    </style>
+</head>
+<body>
+    <div class="grid">
+        <div class="block-1">Code in any Language</div>
+        <div class="block-2">VS Code supports almost every major programming language. Several ship in the box,like JavaScript, TypeScript, CSS, and HTML, but extensions for others can be found in the VS Code Marketplace.</div>
+        <div class="block">
+            <img src="./rust-svgrepo-com.svg"  style="width: 40px;background-color: #fff;color: #fff;" alt="">
+            Rust</div>
+        <div class="block"> <img src="./sql-database-sql-azure-svgrepo-com.svg" style="width: 40px;" alt="">
+            SQL</div>
+        <div class="block"> <img src="./icons8-javascript.svg" style="width: 40px;" alt="">
+            JavaScript</div>
+        <div class="block"> <img src="./java-svgrepo-com.svg" style="width: 40px;" alt="">
+            Java</div>
+        <div class="block"> <img src="./mongo-svgrepo-com.svg" style="width: 40px;" alt="">
+            Mongo</div>
+        <div class="block"> <img src="./react-svgrepo-com.svg" style="width: 40px;" alt="">
+            React</div>
+        <div class="block"> <img src="./python-svgrepo-com.svg" style="width: 40px;" alt="">
+            Python</div>
+        <div class="block"><img src="./typescript-svgrepo-com.svg" style="width: 35px;" alt="">
+            Typescript</div>
+        <div class="block"> <img src="./php-svgrepo-com.svg" style="width: 40px;" alt="">
+            PHP</div>
+
+    </div>
+</html>
